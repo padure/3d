@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Auto service,3D Service ,reparatie auto Cahul">
+    <meta name="author" content="Pisarenco Mihail"> 
+    <meta name="author" content="Strelciuc Danil"> 
+    <link rel="shortcut icon" href="/img/Logo.png">
+    <title>Service </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/appointment.css">
+</head>
+<body>
+  <header class=" sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">   
+      <div class="container-fluid p-1 ">
+        <a class="navbar-brand ps-5 text-white"  href="/">
+          <h4 class="m-0">3D-Service</h4>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse align-items-center" id="navbarNav">
+          
+          <ul class="navbar-nav d-flex ">
+            <li class="nav-item justify-content-center">
+              <a class="nav-link active text-white" aria-current="page" href="/index.html">Acasă</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="/servicii.html">Servicii</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacte </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/appointment.html">Programarea online</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/contact.html">Mecanic</a></li>             
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+    
+  <div class="container">
+    <div>
+      <h1 class=" text-white ps-5 pt-md-5">PROGRAMARE ONLINE</h1>
+      <p class=" text-white ps-5">După ce trimiteți formularul, Va ramămine doar la ora si data stabilită să veniți la service cu automobilul</p>
+    </div>
+
+    <div class="body d-flex m-5">
+      <div class="s1 ">
+        <form id="myForm" class="row g-2">
+          <div class="col-md-5">
+            <label class="form-label text-white">Numele</label>
+            <input type="text" name="Numele" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="col-md-5  mb-2">
+            <label for="validationCustom02" class="form-label text-white ">Email</label>
+            <input type="email" name="Email" class="form-control" placeholder="info@3D-Service.com" required>
+          </div>
+          <div class="col-md-5">
+            <label class="form-label text-white">Data</label>
+            <input type="date" name="Data" class="form-control" required>
+          </div>
+          <div class="col-md-5  mb-2">
+            <label for="validationCustom02" class="form-label text-white ">Ora</label>
+            <input type="time" name="Ora" class="form-control" placeholder="info@3D-Service.com" required>
+          </div>
+          <div class="col-md-5">
+            <label class="form-label text-white">Model automobil</label>
+            <input type="date" name="Model automobil" class="form-control" required>
+          </div>
+          <div class="col-md-5 ">
+            <label  class="form-label text-white">Serviciul</label>
+            <select name="Serviciul" class="form-select" required >
+              <option >Serviciile noastre</option>
+              <option value="1">Diagnostic auto</option>
+              <option value="2">Suspensie</option>
+              <option value="3">Direcție</option>
+              <option value="4">Transmisie</option>
+              <option value="5">Echipament electric</option>
+              <option value="6">Sistem de evacuare</option>
+            </select>
+          </div>
+          <div class="mb-3 mt-3">
+            <label class="form-label text-white">Mesaj</label>
+            <textarea name="textarea" class="form-control textarea" placeholder="Required example textarea" required></textarea>
+          </div>
+        
+        </form>
+        <button class="btn btn-primary" onclick='SubForm()'>Trimite</button>
+
+      </div>  
+  
+      <div class="s2 ">
+          <div class="program  border border-white border-2 rounded ">
+            <div class="p-5 pt-0">
+              <h3  class="text-white pb-2 pt-3 " >Program</h3>
+              <div>
+                <h6 class="text-white">luni - vineri  8.00 - 18.00</h6>
+                <h6 class="text-white">sâmbătă  8.00 - 13.00</h6>
+                <h6 class="text-white">duminică Zi libera</h6>
+              </div>   
+            </div>
+           
+          </div>
+          <div class="program  border border-white border-2 rounded  mt-3">
+            <div class="p-5 pt-0">
+              <h3  class="text-white pb-2 pt-3 " >Program</h3>
+              <div>
+                <h6 class="text-white">luni - vineri  8.00 - 18.00</h6>
+                <h6 class="text-white">sâmbătă  8.00 - 13.00</h6>
+                <h6 class="text-white">duminică Zi libera</h6>
+              </div>   
+            </div>
+           
+          </div>
+      </div>
+  
+      
+    </div>
+  </div>
+
+  <div class="descr d-flex">
+    <p class="text-white pt-3">Acest website a fost realizat în cadrul  competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului</p>
+  </div>
+
+</body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+  $.ajax({
+    url:"https://api.apispreadsheets.com/data/3ZBlype6xo5I20aW/",
+    type:"post",
+    data:$("#myForm").serializeArray(),
+    success: function(){
+      alert("Form Data Submitted :)")
+    },
+    error: function(){
+      alert("There was an error :(")
+    }
+  });
+}
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

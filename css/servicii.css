@@ -1,0 +1,36 @@
+
+.form-select{
+    width: 100%;
+    background-color: #1d1d41;
+}
+.service{
+    height: 350px;
+    width: 100%;
+    background-color: #1c1c3f;
+    border-radius: 5px;
+}
+.body{
+
+    justify-content: space-between;
+}
+.s1{
+ width: 60%;
+}
+@media screen and (max-width: 1050px){
+    .body{
+        flex-wrap: wrap;
+    }
+    .s1{
+        width: 100%;
+    }
+    .s2{
+        display: flex;
+       margin-top: 30px;
+       flex-direction: row;
+       gap: 30px;
+    }
+} 
+
+ul{
+    max-width: 310px
+}
